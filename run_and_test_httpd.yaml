@@ -1,7 +1,7 @@
 ---
 - name: install start and enable httpd
   gather_facts: false
-  hosts: centos
+  hosts: ansible1
   tasks:
   - name: install package
     package:
@@ -19,4 +19,4 @@
   tasks:
   - name: test httpd access
     uri:
-      url: http://centos01
+      url: http://ansible1
